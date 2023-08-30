@@ -1,6 +1,8 @@
-# Snoofus Speech Analyzer
+# Snoofus
 
-Snoofus Speech Analyzer is a web-based tool that allows users to record their speech and receive feedback on the quality of their speech in terms of clarity and confidence.
+Snoofus is a Speech Analyzer that allows users to record their speech and receive feedback on the quality of their speech in terms of clarity and confidence. Also, meet Snoofus.
+
+![image](https://github.com/amityalwar/snoofus/assets/24665860/42bda711-fa85-4445-a683-dc3a0c640538)
 
 ## Features
 
@@ -14,8 +16,8 @@ Snoofus Speech Analyzer is a web-based tool that allows users to record their sp
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your_username/snoofus_speech_analyzer.git
-   cd snoofus_speech_analyzer
+   git clone https://github.com/amityalwar/snoofus.git
+   cd snoofus
    ```
 
 2. **Set Up OpenAI API Key**
