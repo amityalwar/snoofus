@@ -1,8 +1,12 @@
 # Snoofus
 
-Snoofus is a Speech Analyzer that allows users to record their speech and receive feedback on the quality of their speech in terms of clarity and confidence. Also, meet Snoofus.
+Snoofus is a Speech Analyzer that allows users to record their speech and receive feedback on the quality of their speech in terms of clarity, confidence and fluency. Snoofus also provides the count of filler words (disfluencies) such as uh, ummm, ah, etc., you use in your speech. Under the hood, Snoofus uses OpenAI's "tiny.en" Whisper model for converting speech to text. The text is then processed by GPT-4 to provide the analysis of the speech. 
 
-![image](https://github.com/amityalwar/snoofus/assets/24665860/42bda711-fa85-4445-a683-dc3a0c640538)
+Snoofus will give you great feedback on your speech but there are several aspects of speech not captured by this furry overlord. Eye contact, long pauses, body language and other visual cues that communicate a lot about your speech are not considered in the analysis provided.
+
+Also, meet Snoofus.
+
+<img width="321" alt="image" src="https://github.com/amityalwar/snoofus/assets/24665860/408e215e-b2ee-425a-84f4-50cac665013b">
 
 ## Features
 
@@ -61,10 +65,20 @@ Snoofus is a Speech Analyzer that allows users to record their speech and receiv
 2. **Analysis**: From the dropdown, select a recording and click "Analyze" to get feedback on your speech.
 3. **Playback & Management**: Use the dropdown to select previous recordings for playback. You can also delete individual recordings or all recordings at once.
 
+## Demo
+
+1. **Good Speech**: [Barack Obama](https://www.youtube.com/watch?v=h5gNSHcoVmQ)
+
+https://github.com/amityalwar/snoofus/assets/24665860/f3427368-60c2-4b4d-80fc-41fe4177fac1
+
+2. **Bad Speech**: [Richard Hendricks](https://www.youtube.com/watch?v=-mSiJyU5aiM)
+
+https://github.com/amityalwar/snoofus/assets/24665860/d9591b03-37d9-473a-9311-52108c9dd1a5
+
 ## Contributing
 
-If you'd like to contribute, please fork the repository and create a pull request. We'd love to merge your changes into the main project!
+If you'd like to contribute, please fork the repository and create a pull request. I'd love to merge your changes into the main project!
 
 ## License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
+This project is licensed under the MIT License. See [LICENSE](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) for more details.
