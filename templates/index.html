@@ -10,7 +10,10 @@
 
 <button onclick="startRecording()">Start Recording</button>
 <button onclick="stopRecording()" disabled>Stop Recording</button>
+<span id="timer">00:00</span>
 <audio id="audioPlayer" controls></audio>
+
+
 
 <!-- Previous Recordings Dropdown -->
 <h3>Previous Recordings:</h3>
@@ -56,7 +59,7 @@
 <!-- Delete Confirmation Modal -->
 <div id="deleteModal" class="modal">
     <div class="modal-content">
-        <h4>Are you sure you want to delete this recording?</h4>
+        <h4>Are you sure you want to delete all the recordings?</h4>
         <button onclick="confirmDelete()">Yes, Delete</button>
         <button onclick="closeDeleteModal()">No, Go Back</button>
     </div>

@@ -24,7 +24,7 @@ async function startRecording() {
         };
         
         mediaRecorder.start();
-        
+        startTimer();
         // Update button styles
         const startButton = document.querySelector("button[onclick='startRecording()']");
         const stopButton = document.querySelector("button[onclick='stopRecording()']");
@@ -39,6 +39,7 @@ async function startRecording() {
 function stopRecording() {
     if (mediaRecorder && mediaRecorder.state !== "inactive") {
         mediaRecorder.stop();
+        stopTimer();
     }
     
     // Reset button styles
@@ -273,14 +274,7 @@ const catImages = [ // List of cat image filenames in the static directory
     "cat5.png",
     "cat6.png",
     "cat7.png",
-    "cat8.png",
-    "cat9.png",
-    "cat10.png",
-    "cat11.png",
-    "cat12.png",
-    "cat13.png",
-    "cat14.png",
-    "cat15.png",
+    "cat8.png"
     // ... add more filenames as needed ...
 ];
 
@@ -319,3 +313,28 @@ function deleteSelectedRecording() {
     }
 }
 
+// Add a timer
+let recordingInterval;
+let seconds = 0;
+let minutes = 0;
+
+function startTimer() {
+    // Reset the timer to zero
+    seconds = 0;
+    minutes = 0;
+    document.getElementById("timer").innerText = "00:00";
+
+    recordingInterval = setInterval(function() {
+        seconds++;
+        if (seconds >= 60) {
+            minutes++;
+            seconds = 0;
+        }
+        document.getElementById("timer").innerText = (minutes < 10 ? "0" + minutes : minutes) + ":" + (seconds < 10 ? "0" + seconds : seconds);
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(recordingInterval);
+    // Do not reset the timer here. Let it display the last counted value.
+}

@@ -130,3 +130,10 @@ select:-moz-focusring {
     pointer-events: none;  /* Ensures the triangle doesn't interfere with dropdown interactions */
     font-size: 12px;  /* Adjust the size of the triangle */
 }
+
+#timer {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 20px;
+}
