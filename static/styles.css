@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px auto;
+    max-width: 800px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h3 {
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #f8f9fa;
+    border: 1px solid #dfe1e5;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #e8e8e8;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+button[disabled] {
+    background-color: #e0e0e0;
+    border: 1px solid #bdbdbd;
+    color: #9e9e9e;
+    cursor: not-allowed;
+}
+
+.crimson {
+    background-color: crimson;
+    color: white;
+}
+
+.crimson:hover {
+    background-color: darkred;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7); /* Black with slight opacity */
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;  /* Increase padding for a larger modal */
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    text-align: center;
+    width: 450px;   /* Set a specific width for the modal */
+}
+
+.cat-image {
+    width: 150px;   /* Increase width to make the cat image bigger */
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Style for the dropdown */
+select {
+    width: 100%;             /* Make it occupy full width of its container */
+    padding: 10px;           /* Some padding for better appearance */
+    margin: 10px 0;          /* Margin for spacing */
+    font-size: 16px;         /* Increase font size */
+    border: 1px solid #ccc;  /* Border for definition */
+    border-radius: 4px;      /* Rounded corners */
+    box-sizing: border-box;  /* Ensure padding and border are included in total width */
+    appearance: none;        /* Remove default appearance */
+    background-color: #f8f9fa; /* Light background color similar to other UI elements */
+    padding-right: 25px; /* Add padding to account for the triangle */
+}
+
+/* For better compatibility with certain browsers like Firefox */
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+
+/* Styling for the dropdown container */
+.dropdown-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;  /* Optional: set a max width if needed */
+}
+
+/* Inverted triangle using a pseudo-element */
+.dropdown-container::after {
+    content: '\25BC';  /* Unicode character for a down-pointing triangle */
+    position: absolute;
+    top: 50%;
+    right: 15px;  /* Adjusted position to bring triangle inside the dropdown */
+    transform: translateY(-50%);
+    pointer-events: none;  /* Ensures the triangle doesn't interfere with dropdown interactions */
+    font-size: 12px;  /* Adjust the size of the triangle */
+}

@@ -1,0 +1,32 @@
+# Virtual Environment
+venv/
+env/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# SQLite database files
+*.sqlite3
+
+# IDE Configuration
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# User uploads
+uploads/
+
+# OS generated files
+.DS_Store
+*.swp
+
+# config
+config.py
+```
