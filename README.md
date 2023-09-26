@@ -75,9 +75,6 @@ https://github.com/amityalwar/snoofus/assets/24665860/f3427368-60c2-4b4d-80fc-41
 
 https://github.com/amityalwar/snoofus/assets/24665860/d9591b03-37d9-473a-9311-52108c9dd1a5
 
-## Contributing
-
-If you'd like to contribute, please fork the repository and create a pull request. I'd love to merge your changes into the main project!
 
 ## License
 
