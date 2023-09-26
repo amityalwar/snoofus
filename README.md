@@ -6,7 +6,7 @@ Snoofus will give you great feedback on your speech but there are several aspect
 
 Also, meet Snoofus.
 
-<img width="321" alt="image" src="https://github.com/amityalwar/snoofus/assets/24665860/408e215e-b2ee-425a-84f4-50cac665013b">
+<img width="200" alt="image" src="https://github.com/amityalwar/snoofus/assets/24665860/408e215e-b2ee-425a-84f4-50cac665013b">
 
 ## Features
 
