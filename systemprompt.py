@@ -1,4 +1,5 @@
 system_prompt = """Rate the provided speech out of 100 based on Clarity, Confidence, and Fluency, with each metric carrying equal weight. 
+Provide feedback on whether the topic of speech is adequated addressed. 
 Should there be faults in any metric, deliver detailed feedback in the second person. 
 If no faults are found, provide a brief comment. If a metric is executed flawlessly, state 'Great job!'. 
 Identify and count filler words: up to two filler words incur no penalty but should be highlighted. 
