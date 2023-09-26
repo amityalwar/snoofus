@@ -15,6 +15,17 @@ Also, meet Snoofus.
 - **File Management**: Users can save, rename, and delete their recordings. They can also listen to previous recordings.
 - **Interactive UI**: The web application provides a user-friendly interface, complete with modals for user actions and confirmation prompts.
 
+## UI Screenshots
+
+First Screen
+
+<img width="873" alt="SCR-20230926-lbud" src="https://github.com/amityalwar/snoofus/assets/24665860/8ae7dea1-61d4-4b06-aeff-dbae54dea5b9">
+
+
+Analysis of a live speech recording of "What is the meaning of Life?"
+
+<img width="867" alt="SCR-20230926-lfyv" src="https://github.com/amityalwar/snoofus/assets/24665860/a16ba366-634c-4e53-94a6-eca26f05a676">
+
 ## Setup & Installation
 
 1. **Clone the Repository**
