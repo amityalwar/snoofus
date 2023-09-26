@@ -191,11 +191,20 @@ function toggleButtons() {
 
 function analyzeSelectedRecording() {
     const selectedRecording = document.getElementById("recordingsDropdown").value;
+    const userPrompt = document.getElementById("userPrompt").value;  // Extract the user's prompt
+
     if (selectedRecording) {
         // Show the modal
         showModal();
-        
-        fetch(`/analyze/${selectedRecording}`)
+
+        // Make the POST request, sending the user prompt as part of the request body
+        fetch(`/analyze/${selectedRecording}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ user_prompt: userPrompt })
+        })
         .then(response => response.json())
         .then(data => {
             closeModal(); // Close the modal after analysis
@@ -207,6 +216,7 @@ function analyzeSelectedRecording() {
         });
     }
 }
+
 
 function confirmDeleteFor(selectedRecording) {
     recordingToDelete = selectedRecording;
@@ -338,3 +348,4 @@ function stopTimer() {
     clearInterval(recordingInterval);
     // Do not reset the timer here. Let it display the last counted value.
 }
+

@@ -8,6 +8,8 @@
 </head>
 <body>
 
+<input type="text" id="userPrompt" placeholder="What is your speech about? (Example: A self-introduction)" style="width: 100%; margin-bottom: 15px;">
+
 <button onclick="startRecording()">Start Recording</button>
 <button onclick="stopRecording()" disabled>Stop Recording</button>
 <span id="timer">00:00</span>
@@ -27,6 +29,8 @@
 <div id="actions" style="display: none;">
     <button onclick="analyzeSelectedRecording()">Analyze</button>
     <button onclick="deleteSelectedRecording()">Delete</button>
+    <!-- Delete All Button -->
+    <button onclick="confirmDeleteAll()">Delete All</button>
 </div>
 
 <!-- Analysis Loading Modal -->
@@ -64,9 +68,6 @@
         <button onclick="closeDeleteModal()">No, Go Back</button>
     </div>
 </div>
-
-<!-- Delete All Button -->
-<button onclick="confirmDeleteAll()">Delete All</button>
 
 <!-- Analysis Output -->
 <h3>Analysis:</h3>

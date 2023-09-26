@@ -5,6 +5,7 @@ import uuid
 import openai
 import whisper
 
+from systemprompt import system_prompt
 from config import OPENAI_API_KEY
 
 app = Flask(__name__)
@@ -59,7 +60,7 @@ def get_recordings():
 def serve_recording(filename):
     return send_from_directory(UPLOAD_FOLDER, filename)
 
-@app.route('/analyze/<string:recordingName>', methods=['GET'])
+@app.route('/analyze/<string:recordingName>', methods=['GET', 'POST'])
 def analyze(recordingName):
     filepath = os.path.join(UPLOAD_FOLDER, f"{recordingName}.wav")
     
@@ -95,25 +96,25 @@ def send_to_whisper(filepath):
     result = model.transcribe(filepath, initial_prompt = "Ummmm, yeah. Ah, yeah. Ahh. Uhh, yeah. Uhhh, I guess. Okay, ehm, uhhh, like, I guess")
     return result["text"]
 
-system_prompt = """You are a speech evaluator. 
-Provide feedback in second person on this on the following attributes: Clarity, Confidence, Fluency. 
-Provide a counter for filler words if there are any. If the speech is already satisfactory on a specific metric - just say "Great job!". 
-Begin the response by providing a score out of 100 with equal weights for all the metrics. 
-Don't include any introduction or conclusion paragraphs."""
 def analyze_with_gpt4(transcription):
     # Placeholder function: Send the transcription to GPT-4 or a similar model
     # and get an analysis or quality assessment of the transcription.
+
+    # Extract the user's prompt from the request data
+    data = request.json
+    user_prompt = data.get('user_prompt', '')  # Default to an empty string if not provided
+
     response = openai.ChatCompletion.create(
         model="gpt-4",
         temperature=0.1,
         messages=[
             {
                 "role": "system",
-                "content": system_prompt
+                "content": system_prompt + user_prompt
             },
             {
                 "role": "user",
-                "content": transcription
+                "content": "Body of the speech: " + transcription
             }
         ]
     )
