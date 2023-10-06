@@ -26,6 +26,23 @@ Analysis of a live speech recording of "What is the meaning of Life?"
 
 <img width="867" alt="SCR-20230926-lfyv" src="https://github.com/amityalwar/snoofus/assets/24665860/a16ba366-634c-4e53-94a6-eca26f05a676">
 
+## Usage
+
+1. **Recording Speech**: Click on the "Start Recording" button to start recording your speech. Once done, click on "Stop Recording". After stopping, you'll be prompted to name your recording.
+2. **Analysis**: From the dropdown, select a recording and click "Analyze" to get feedback on your speech.
+3. **Playback & Management**: Use the dropdown to select previous recordings for playback. You can also delete individual recordings or all recordings at once.
+
+## Demo
+
+1. **Good Speech**: [Barack Obama](https://www.youtube.com/watch?v=h5gNSHcoVmQ)
+
+https://github.com/amityalwar/snoofus/assets/24665860/f3427368-60c2-4b4d-80fc-41fe4177fac1
+
+2. **Bad Speech**: [Richard Hendricks](https://www.youtube.com/watch?v=-mSiJyU5aiM)
+
+https://github.com/amityalwar/snoofus/assets/24665860/d9591b03-37d9-473a-9311-52108c9dd1a5
+
+
 ## Setup & Installation
 
 1. **Clone the Repository**
@@ -69,23 +86,6 @@ Analysis of a live speech recording of "What is the meaning of Life?"
    ```
 
    The application will start and should be accessible at `http://127.0.0.1:5000/`.
-
-## Usage
-
-1. **Recording Speech**: Click on the "Start Recording" button to start recording your speech. Once done, click on "Stop Recording". After stopping, you'll be prompted to name your recording.
-2. **Analysis**: From the dropdown, select a recording and click "Analyze" to get feedback on your speech.
-3. **Playback & Management**: Use the dropdown to select previous recordings for playback. You can also delete individual recordings or all recordings at once.
-
-## Demo
-
-1. **Good Speech**: [Barack Obama](https://www.youtube.com/watch?v=h5gNSHcoVmQ)
-
-https://github.com/amityalwar/snoofus/assets/24665860/f3427368-60c2-4b4d-80fc-41fe4177fac1
-
-2. **Bad Speech**: [Richard Hendricks](https://www.youtube.com/watch?v=-mSiJyU5aiM)
-
-https://github.com/amityalwar/snoofus/assets/24665860/d9591b03-37d9-473a-9311-52108c9dd1a5
-
 
 ## License
 
