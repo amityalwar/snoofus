@@ -15,6 +15,17 @@ Also, meet Snoofus.
 - **File Management**: Users can save, rename, and delete their recordings. They can also listen to previous recordings.
 - **Interactive UI**: The web application provides a user-friendly interface, complete with modals for user actions and confirmation prompts.
 
+## Demo
+
+1. **Good Speech**: [Barack Obama](https://www.youtube.com/watch?v=h5gNSHcoVmQ)
+
+https://github.com/amityalwar/snoofus/assets/24665860/f3427368-60c2-4b4d-80fc-41fe4177fac1
+
+2. **Bad Speech**: [Richard Hendricks](https://www.youtube.com/watch?v=-mSiJyU5aiM)
+
+https://github.com/amityalwar/snoofus/assets/24665860/d9591b03-37d9-473a-9311-52108c9dd1a5
+
+
 ## UI Screenshots
 
 First Screen
@@ -31,17 +42,6 @@ Analysis of a live speech recording of "What is the meaning of Life?"
 1. **Recording Speech**: Click on the "Start Recording" button to start recording your speech. Once done, click on "Stop Recording". After stopping, you'll be prompted to name your recording.
 2. **Analysis**: From the dropdown, select a recording and click "Analyze" to get feedback on your speech.
 3. **Playback & Management**: Use the dropdown to select previous recordings for playback. You can also delete individual recordings or all recordings at once.
-
-## Demo
-
-1. **Good Speech**: [Barack Obama](https://www.youtube.com/watch?v=h5gNSHcoVmQ)
-
-https://github.com/amityalwar/snoofus/assets/24665860/f3427368-60c2-4b4d-80fc-41fe4177fac1
-
-2. **Bad Speech**: [Richard Hendricks](https://www.youtube.com/watch?v=-mSiJyU5aiM)
-
-https://github.com/amityalwar/snoofus/assets/24665860/d9591b03-37d9-473a-9311-52108c9dd1a5
-
 
 ## Setup & Installation
 
