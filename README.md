@@ -4,10 +4,6 @@ Snoofus is a Speech Analyzer that allows users to record their speech and receiv
 
 Snoofus will give you great feedback on your speech but there are several aspects of speech not captured by this furry overlord. Eye contact, long pauses, body language and other visual cues that communicate a lot about your speech are not considered in the analysis provided.
 
-Also, meet Snoofus.
-
-<img width="200" alt="image" src="https://github.com/amityalwar/snoofus/assets/24665860/408e215e-b2ee-425a-84f4-50cac665013b">
-
 ## Features
 
 - **Live Audio Recording**: Users can record their speech directly through the browser.
